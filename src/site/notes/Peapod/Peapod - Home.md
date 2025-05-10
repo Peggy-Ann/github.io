@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/peapod/peapod-home/","tags":["gardenEntry"],"dgShowToc":true}
+{"dg-publish":true,"permalink":"/peapod/peapod-home/","tags":["gardenEntry"]}
 ---
 
 
