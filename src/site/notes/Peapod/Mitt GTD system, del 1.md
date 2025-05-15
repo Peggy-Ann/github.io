@@ -2,8 +2,7 @@
 {"dg-publish":true,"permalink":"/peapod/mitt-gtd-system-del-1/","tags":["#GTD"]}
 ---
 
-  
-
+## Mitt GTD system, del 1
 GTD eller Get Things Done som det heter är ett produktivitetssystem skapat av David Allen [Get Things Done](https://gettingthingsdone.com/).
 
 Jag har till och från använt mig av GTD som metod sen ca 2006. Av olika anledningar har jag aldrig lyckats hålla fast vid det fullt ut utan hamnat i situationer av så högt tempo att jag har bara släppt systemet och sprungit. Sen har det gått ett par månader i bland ett år och så har jag tagit upp det igen. Varje gång jag börjar om har jag en enorm känsla av kontroll. 2018 gick jag en kurs i GTD och den läraren så något som fick det att klicka hos mig. Använd bara det som funkar för dig, om den där biten i metoden inte fungerar så skippa den. Idag har jag min egen variant av GTD. Alla som kommit i kontakt med GTD skulle känna igen allt jag använder. Den andra delen av varför jag har haft svårt att få ihop GTD är systemstöd. Jag skriver inte på papper, jag använder bara digitala verktyg. Det måste synka över alla mina enheter(dator, ipad och telefon) och det måste gå att kombinera med min kalender.
