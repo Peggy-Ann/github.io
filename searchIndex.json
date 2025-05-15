@@ -1,23 +1,15 @@
 [
 {
 		"title": "Peapod - Home",
-		"date":"Thu May 15 2025 13:53:50 GMT+0000 (Coordinated Universal Time)",
+		"date":"Thu May 15 2025 16:58:34 GMT+0000 (Coordinated Universal Time)",
 		"url":"/",
 		"content": "Peapod - Hello World!",
 		"tags": [ "note","gardenEntry"]
 },
 
 {
-		"title": "Test",
-		"date":"Thu May 15 2025 13:53:50 GMT+0000 (Coordinated Universal Time)",
-		"url":"/peapod/test/",
-		"content": "Title\nDet här är en testsida",
-		"tags": [ "note"]
-},
-
-{
 		"title": "Ny testsida",
-		"date":"Thu May 15 2025 13:53:50 GMT+0000 (Coordinated Universal Time)",
+		"date":"Thu May 15 2025 16:58:34 GMT+0000 (Coordinated Universal Time)",
 		"url":"/peapod/untitled/",
 		"content": "Test av en annan sida",
 		"tags": [ "note"]
