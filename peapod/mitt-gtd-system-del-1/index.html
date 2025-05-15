@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Mitt GTD system, del 1</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.1e218e3a.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section">
+<div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
+<div x-show.important="!isDesktop" style="display:none">
+<nav class="navbar">
+<div class="navbar-inner">
+<span style="font-size:1.5rem;margin-right:10px" @click="showFilesMobile=!showFilesMobile"><i icon-name="menu"></i></span>
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Peapod</h1>
+</a>
+</div>
+</nav>
+</div>
+<div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none" class="fullpage-overlay"></div>
+<nav class="filetree-sidebar" x-show.important="isDesktop || showFilesMobile" style="display:none">
+<a href="/" style="text-decoration:none">
+<h1 style="text-align:center">Peapod</h1>
+</a>
+<div class="folder" x-data="{isOpen: true}">
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Peapod')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Peapod</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/peapod/mitt-gtd-system-del-1/">Mitt GTD system, del 1 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/peapod/my-3-d-printing-journey-so-far/">My 3D printing journey so far… </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Peapod - Home </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<p>GTD eller Get Things Done som det heter är ett produktivitetssystem skapat av David Allen <a href="https://gettingthingsdone.com/" target="_blank" class="external-link">Get Things Done</a>.</p>
+<p>Jag har till och från använt mig av GTD som metod sen ca 2006. Av olika anledningar har jag aldrig lyckats hålla fast vid det fullt ut utan hamnat i situationer av så högt tempo att jag har bara släppt systemet och sprungit. Sen har det gått ett par månader i bland ett år och så har jag tagit upp det igen. Varje gång jag börjar om har jag en enorm känsla av kontroll. 2018 gick jag en kurs i GTD och den läraren så något som fick det att klicka hos mig. Använd bara det som funkar för dig, om den där biten i metoden inte fungerar så skippa den. Idag har jag min egen variant av GTD. Alla som kommit i kontakt med GTD skulle känna igen allt jag använder. Den andra delen av varför jag har haft svårt att få ihop GTD är systemstöd. Jag skriver inte på papper, jag använder bara digitala verktyg. Det måste synka över alla mina enheter(dator, ipad och telefon) och det måste gå att kombinera med min kalender.</p>
+<p>Under mina år har systemstödet faktiskt varit det som har fått mig mest frustrerad. Jag har testat så många olika appar för ToDo-listor, påminnelser, kalender med integrerade listor mm. Men ingen har hållit hela vägen. Många är utmärkta på det dom gör men jag kan inte synka min kalender eller det funkar bara på telefonen. Tills nu. Förra året hittade jag Obsidian och det sista pusselbiten föll på plats.</p>
+<p>Mitt system är enkelt, det är framförallt två saker jag håller fast vid.</p>
+<p>Min ToDo lista och min vecko-genomomgång.</p>
+<p>I Obsidian kan jag skapa en &quot;dashboard&quot; som visar mig mina saker jag har att göra. Den har jag alltid uppe bredvid min &quot;dagliga&quot; anteckning. Min dagliga anteckning är min grund.</p>
+<p>Så här ser min dashboard ut:</p>
+<p><img src="posts/obsidian.jpg" alt="Obsidian dashboard"></p>
+<p>Den består av två delar:</p>
+<ol>
+<li>
+<p>Dagens möten och hållpunkter</p>
+</li>
+<li>
+<p>Nytt - Nya saker som dyker upp som jag behöver komma ihåg/hantera</p>
+</li>
+</ol>
+<p>Med obsidian kan jag enkelt se till att alla mina uppgifter automatiskt kommer in i min dashboard. med hjälp av tags, dataview och några få plugins så blir mitt system komplett.</p>
+<p>Varje morgon så kastar jag ett öga på min dashboard för att se vilka saker jag har att göra idag, vilka saker som har ett kommande slutdatum. Jag kontrollerar mina möten och gör anteckningar direkt i min dagliga anteckning både inför möten(sånt jag behöver ta upp, ta reda på etc) och under mötet för att ha som minnesanteckningar. Om jag får uppgifter från mötet så skapar jag tasks direkt i mötet som dyker upp i min dashboard. Om jag sen varit slarvig med min uppgiftsbeskrivning, kan jag enkelt klicka på uppgiften i min dashboard så tar den mig till den dagliga anteckningen där den är skapad och jag kan påminna mig om vad det var vi kom överens om genom min andra anteckningar.</p>
+<p>Om jag är klar med mina uppgifter för dagen kan jag snabbt ögna igenom mina andra uppgifter i min dashboard för dom ligger där precis bredvid.</p>
+<p>Min veckogenomgång är viktig, den gör jag på torsdag förmiddag. Många lägger genomgången på fredagen men jag gillar att ha en &quot;extra&quot; arbetsdag när jag gör den om jag har missat något som behöver blir klart den här veckan eller om jag behöver påminna någon om att jag vill ha svar innan veckan är slut så är det bra att ha både torsdag och fredag på sig.</p>
+<p>På min genomgång går jag igenom veckan som har gått och kikar igenom alla anteckningar. Har jag glöm lägga till någon uppgift? Har jag glömt att klarmarkera något? Jag kikar igenom min kalender, har jag fått med allt från veckan eller har det kommit upp något som inte finns med i Obsidian? Sist så går jag igenom hela min uppgiftslista. Den här består av lite olika kategorier: Idag(saker som ska bli klara idag), med ett tidsbestämt slutdatum, Mina uppgifter, Uppgifter jag har delegerat till andra och sen är det olika projekt. Absolut sist i min lista ligger &quot;Framtid/Någon gång&quot; uppgifter. Det är ideer som jag har haft som kanske ska göras sen men som inte är aktuella nu. Den här listan kan man skippa och bara gå igenom på månadsbasis eller så om de övriga listorna innehåller väldigt mycket.</p>
+<p>Det som har slagit mig är att om jag har tid att på morgonen när jag förbereder min dag att gå igenom en stor del av min lista så brukar veckogenomgångarna ofta bli lättare och snabbareför jag har redan koll på det som ska göras.</p>
+<p>Det finns några nyckel koncept inom GTD som jag håller fast vid.</p>
+<ol>
+<li>Skriv ner (samla in)</li>
+</ol>
+<p>David Allen säger: &quot;Your mind is for having ideas, not holding them&quot; Vad han menar är att vi inte ska slösa vår hjärnkapacitet på att försöka komma ihåg saker utan istället skriva ner dom på ett ställe där vi litar på att vi kommer att plocka upp det igen för att hantera det. Så när du får en uppgift, en ide eller en fundering, skriv ner det i din &quot;inbox&quot; för mig är det mina dagliga anteckningar. Där vet jag att även om det inte blir en uppgift direkt så kommer jag att se den igen vid min veckogenomgång.</p>
+<ol start="2">
+<li>Gå igenom, utvärdera(vad är nästa fysiska steg)</li>
+</ol>
+<p>Vid vecko-genomgången(eller den dagliga) fundera på dina uppgifter, vad är nästa sak du behöver göra för att komma vidare med uppgiften? Om uppgiften är: &quot;Skapa en presentation till mötet&quot; så vad måste du göra för att komma igång? Troligtvis så kan du inte bara slänga ihop en presentation utan du behöver ta reda på information så uppgiften borde vara: &quot;Googla X till presentationen på mötet&quot;. Syftet här är att bryta ner uppgifterna i mindre bitar så att de är lätt att komma vidare. &quot;Vad är nästa sak du måste göra?&quot;</p>
+<ol start="3">
+<li>Tar det mindre än 2 minuter gör det direkt</li>
+</ol>
+<p>Här har jag sett en del varianter, det finns dom dom säger att om en uppgift tar mindre än två minuter att göra så gör den direkt, oavsett vad du håller på med. I GTD så menar man att vid en daglig eller veckogenomgång om något tar mindre än två minuter så gör det direkt. Två minuter är så pass kort tid att det inte är värt att göra en uppgift av det och planera in den. Om det inte är så att uppgiften i sig är bunden till en viss tid eller person som inte är tillgänglig just då.</p>
+<ol start="4">
+<li>Om du kontinuerligt skjuter upp något är det verkligen viktigt? Ta bort det!</li>
+</ol>
+<p>Fortsättning följer....</p>
+</main>
+<aside>
+<div class="sidebar">
+<div class="sidebar-container">
+</div>
+</div>
+</aside>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="yyyy-MM-dd HH:mm",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
