@@ -21,10 +21,7 @@ Min ToDo lista och min vecko-genomomgång.
 I Obsidian kan jag skapa en "dashboard" som visar mig mina saker jag har att göra. Den har jag alltid uppe bredvid min "dagliga" anteckning. Min dagliga anteckning är min grund.
 
 Så här ser min dashboard ut:
-
-![Obsidian dashboard](posts/obsidian.jpg)
-
-  ![Peggy-Ann/peapod/content/posts/obsidian.jpg](vscode-vfs://github/Peggy-Ann/peapod/content/posts/obsidian.jpg)
+![obsidian.jpg.png](/img/user/Attachments/obsidian.jpg.png)
 
 Den består av två delar:
 
