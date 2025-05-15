@@ -24,7 +24,7 @@ Så här ser min dashboard ut:
 
 ![Obsidian dashboard](posts/obsidian.jpg)
 
-  
+  ![Peggy-Ann/peapod/content/posts/obsidian.jpg](vscode-vfs://github/Peggy-Ann/peapod/content/posts/obsidian.jpg)
 
 Den består av två delar:
 
